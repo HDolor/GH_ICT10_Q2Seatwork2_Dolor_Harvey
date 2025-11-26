@@ -1,4 +1,4 @@
-]=/<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,59 +17,60 @@
             <form class="form form-control">
                 <div class="input-group">
                     <span class="bg-danger text-light fw-bold fs-5 input-group-text">First Name</span>
-                    <input type="text" class="form-control" id="fn">
+                    <input type="text" class="form-control" id="fn" required>
                 </div><br>
                 <div class="input-group">
                     <span class="bg-danger text-light fw-bold fs-5 input-group-text">Last Name</span>
-                    <input type="text" class="form-control" id="ln">
+                    <input type="text" class="form-control" id="ln" required>
                 </div><br>
                 <div class="input-group">
                     <span class="bg-danger text-light fw-bold input-group-text">Student Number</span>
-                    <input type="text" class="form-control" id="sn">
+                    <input type="number" class="form-control" id="sn" required>
                 </div><br>
                 <div class="input-group">
                     <span class="bg-danger text-light fw-bold input-group-text">Grade & Section</span>
-                    <input type="text" class="form-control" id="gs">
+                    <input type="text" class="form-control" id="gs" required>
                 </div><br>
                 <p class="fw-bold text-danger fs-3">Enter Grades:</p>
                 <div class="row">
                     <div class="col-6">
                         <div class="input-group">
                             <span class="bg-danger text-light fw-bold input-group-text">Science</span>
-                            <input type="number" class="form-control" id="sc">
+                            <input type="number" class="form-control" id="sc" required max="100">
                         </div><br>
                         <div class="input-group">
                             <span class="bg-danger text-light fw-bold input-group-text">English</span>
-                            <input type="number" class="form-control" id="en">
+                            <input type="number" class="form-control" id="en" required max="100">
                         </div><br>
                         <div class="input-group">
                             <span class="bg-danger text-light fw-bold input-group-text">ICT</span>
-                            <input type="number" class="form-control" id="ic">
+                            <input type="number" class="form-control" id="ic" required max="100">
                         </div><br>
                     </div>
                     <div class="col-6">
                         <div class="input-group">
                             <span class="bg-danger text-light fw-bold input-group-text">Math</span>
-                            <input type="number" class="form-control" id="ma">
+                            <input type="number" class="form-control" id="ma" required max="100">
                         </div><br>
                         <div class="input-group">
                             <span class="bg-danger text-light fw-bold input-group-text bg-cover">Filipino</span>
-                            <input type="number" class="form-control" id="fi">
+                            <input type="number" class="form-control" id="fi" required max="100">
                         </div><br>
                         <div class="input-group">
                             <span class="bg-danger text-light fw-bold input-group-text bg-cover">PE</span>
-                            <input type="number" class="form-control" id="pe">
+                            <input type="number" class="form-control" id="pe" required max="100">
                         </div><br>
                     </div>
                 </div>
-                <input class="text-light form-control btn btn-danger fw-bold" py-click="" type="button" value="Calculate GWA">
-            </form>
-            <div class="alert alert-danger fs-3 fw-bold text-light" role="alert" id="nm">
-
-            </div>
+                <input type="button" class="btn btn-danger fw-bold text-light text-center p-2 form-control" py-click="gwa" value="Calculate GWA">
+            </form><br>
+            <div class="container">                  
+                <div class="text-left text-dark fs-5 bg-dark-subtle rounded p-1 border-5 border-start border-dark" id="av"></div>
+            </div><br>  
+            <div class="alert alert-warning fs-1 fw-bold text-warning p-2" role="alert" id="gw"></div>
         </div>
         <div class="col-4"></div>
     </div>
-    <script type="pyscript" src="Main.Py"></script>
+    <script type="py" src="Main.Py"></script>
 </body>
 </html>
